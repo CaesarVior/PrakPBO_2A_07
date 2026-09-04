@@ -43,18 +43,3 @@
    class tersebut!
 
    Jawbaan: Karena class RoadBike sudah mewarisi sifat dari Bike atau RoadBike sudah inheritance dari Bike.
-
-# Tugas Praktikum
-
-1.  Melakukan langkah-langkah tugas praktikum yang dikerjakan tersistematis <br>
-    B. atribut: <br>
-    Kulkas -> merk, tipe, suhu, daya<br>
-    Kursi -> bahan, ukuran, merk, warna <br>
-    Meja Ruang Tamu -> bahan, ukuran, merk, warna <br>
-    Meja Belajar -> bahan, ukuran, jumlahLaci, merk <br>
-
-    C. method: <br>
-    Kulkas -> aturSuhu(), naikkanSuhu(), turunkanSuhu(), bukaTutupPintu() <br>
-    Kursi -> naikkanTinggi(), turunkanTinggi(), pindahkan(), cekKekuatan()<br>
-    Meja Ruang Tamu -> letakkanBarang(), bukaTutup(), bersihkanPermukaan(), aturPosisi()<br>
-    Meja Belajar -> bukaLaci(), tutupLaci(), aturTinggi(), letakkanBuku()<br>
