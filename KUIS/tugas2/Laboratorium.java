@@ -34,17 +34,24 @@ public class Laboratorium {
 
     public Laptop cariLaptop(String kodeAset) {
         // TODO
-        if (daftarLaptop.isEmpty()) {
-            return null;
-        } else {
-            for (Laptop lp : daftarLaptop) {
-                if (lp.getKodeAset().equals(kodeAset)) {
-                    return lp;
-                }
-            }
-            return null;
+        // if (daftarLaptop.isEmpty()) {
+        //     return null;
+        // } else {
+        //     for (Laptop lp : daftarLaptop) {
+        //         if (lp.getKodeAset().equals(kodeAset)) {
+        //             return lp;
+        //         }
+        //     }
+        //     return null;
             
+        // }
+
+        for (Laptop lp : daftarLaptop) {
+            if (lp.getKodeAset().equals(kodeAset)) {
+                return lp;
+            }
         }
+        return null;
     }
 
     public int jumlahPinjamanAktif(Mahasiswa m) {
@@ -74,9 +81,9 @@ public class Laboratorium {
     public boolean kembalikan(String kodeAset) {
         // TODO
         for (Peminjaman p : riwayat) {
-            if (p.getLaptop(p.getLaptop(null)).getKodeAset().equals(kodeAset) && p.isAktif()) {
+            if (p.getLaptop(null).getKodeAset().equals(kodeAset) && p.isAktif()) {
                 p.selesai();
-                p.getLaptop(p.getLaptop(null)).kembalikan();
+                p.getLaptop(null).kembalikan();
                 p.isAktif();
                 return true;
             }
